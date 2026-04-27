@@ -1,10 +1,10 @@
 import React from "react";
 
-export function DashboardButton({
-  label,
-}: {
+type Props = {
   readonly label: string;
-}): React.JSX.Element {
+};
+
+export function DashboardButton({ label }: Props): React.JSX.Element {
   const handleClick = React.useCallback((): void => {
     console.log("Dashboard button clicked");
   }, []);
